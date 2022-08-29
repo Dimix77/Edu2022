@@ -1,22 +1,13 @@
-﻿using System;
-
-class Programm
+﻿Console.Write("Enter three digital number");
+int number = Convert.ToInt32(Console.ReadLine());
+int secondDigit = 0;
+if (number < 0)
 {
-    static void SelectRase()
-    {
-        string[] namesRase = {"Peoples", "Elfs", "Gnomes", "Orks"};
-        for (int i = 0; i < namesRase.Length -1; i++)
-        {
-            Console.Write(i+1 + " - " + namesRace[i] + ", ");
-        }
-    }
-    static void Main(string[] args)
+    secondDigit = -1 * number % 100 / 10;
 
-   
-   {
-    Console.WriteLine();
-   }
-
-   }
-
-
+}
+else 
+{
+    secondDigit = number % 100 / 10;
+}
+Console.WriteLine(secondDigit);
