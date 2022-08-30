@@ -1,13 +1,22 @@
-﻿Console.Write("Enter three digital number");
-int number = Convert.ToInt32(Console.ReadLine());
-int secondDigit = 0;
-if (number < 0)
+﻿{
 {
-    secondDigit = -1 * number % 100 / 10;
+static void main(string[] args);
 
+Console.Write("Enter number");
+int number = Convert.ToInt32(Console.ReadLine());
+
+if (number > -100 && number < 100)
+{
+    Console.WriteLine("Third digital not");
 }
 else 
 {
-    secondDigit = number % 100 / 10;
+    if (number < 0)
+    {
+        number = - 1 * number;
+    }
+    string thirdDigit = Convert.ToString(number);
+    Console.WriteLine(thirdDigit[2]);
 }
-Console.WriteLine(secondDigit);
+}
+}
