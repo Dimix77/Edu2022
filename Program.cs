@@ -6,7 +6,7 @@ if (number < 0)
     secondDigit = -1 * number % 100 / 10;
 
 }
-else 
+else
 {
     secondDigit = number % 100 / 10;
 }
